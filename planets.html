@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>행성 소개 - 태양계 여행</title>
+  <meta name="description" content="수성부터 해왕성까지 8개 행성의 사진과 특징">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%23ffb347%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span class="dot"></span>태양계 여행</a>
+      <nav aria-label="주 메뉴">
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="planets.html" aria-current="page">행성 소개</a></li>
+          <li><a href="compare.html">비교하기</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <p class="eyebrow">Planets</p>
+      <h1>행성 소개</h1>
+      <p class="lead">카드를 누르면 자세한 정보가 열립니다. 유형별로 골라 볼 수도 있어요.</p>
+      <div class="filters" role="group" aria-label="행성 유형 필터">
+        <button class="active" data-filter="all">전체</button>
+        <button data-filter="암석형">암석형</button>
+        <button data-filter="가스 행성">가스 행성</button>
+        <button data-filter="얼음 거인">얼음 거인</button>
+      </div>
+    </section>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </main>
+
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="close" aria-label="닫기">✕</button>
+    <div class="modal-grid">
+      <div class="pic"><img id="m-img" src="" alt=""></div>
+      <div class="modal-body">
+        <h2 id="m-title"></h2>
+        <span class="tag" id="m-tag"></span>
+        <p id="m-desc" style="margin-top:12px;color:var(--muted)"></p>
+        <dl id="m-info"></dl>
+        <p class="fact" id="m-fact"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="container">
+      <p>수치는 공개 천문 자료 기준의 근삿값이며, 위성 수는 새 발견에 따라 바뀔 수 있습니다.</p>
+      <div id="credits" style="margin-top:12px"></div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/planets.js"></script>
+</body>
+</html>
