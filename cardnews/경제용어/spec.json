@@ -1,0 +1,17 @@
+{
+  "size": "square",
+  "theme": {"bg": "#f5f8f4", "bg2": "#d4efdf", "text": "#14211a", "muted": "#4a5a50",
+            "accent": "#14a35a", "accent_text": "#ffffff", "stars": false, "shadow": false},
+  "cards": [
+    {"kind": "cover", "kicker": "경제 기초", "title": "뉴스가 쉬워지는\n경제용어 3가지",
+     "body": "이것만 알아도 경제 기사가 읽혀요"},
+    {"kind": "fact", "kicker": "용어 01 · 인플레이션", "title": "물가가 계속\n오르는 현상",
+     "big": "목표 2%", "body": "같은 돈으로 살 수 있는 게 줄어들어요.\n한국은행은 물가상승률 2%를 목표로 관리해요."},
+    {"kind": "fact", "kicker": "용어 02 · 기준금리", "title": "모든 금리의\n출발점",
+     "big": "1년에 8번", "body": "한국은행 금융통화위원회가 정해요.\n오르면 대출·예금 이자도 따라 오르는 경향이 있어요.", "accent": "#1d7fd8"},
+    {"kind": "fact", "kicker": "용어 03 · 복리", "title": "이자에 이자가\n붙는 방식",
+     "big": "72의 법칙", "body": "72 ÷ 연이율 = 원금이 2배 되는 기간.\n연 6%면 약 12년 만에 2배가 돼요.", "accent": "#e8792b"},
+    {"kind": "outro", "kicker": "정리", "title": "인플레이션 · 기준금리 · 복리",
+     "body": "저장해 두고 경제 뉴스 볼 때 꺼내 보세요"}
+  ]
+}
